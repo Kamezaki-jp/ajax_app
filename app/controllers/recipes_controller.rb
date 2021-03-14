@@ -9,6 +9,14 @@ class RecipesController < ApplicationController
     @recipes = Recipe.all
   end
   
+  def edit
+    
+  end
+  
+  def delete
+    
+  end
+  
   private
     def recipe_params
       params.require(:recipe).permit(:title, :body)
